@@ -18,15 +18,17 @@ body {
     overflow: hidden;
     height: 100vh;
     width: 100%;
-    background-color: rgb(5, 5, 5);
+    background-color: #555;
     color: #ffffff;
     overflow: scroll;
     overflow-x: hidden;
 }
 
 .navbar {
+    top: 0;
     width: 100%;
     padding: 1rem;
+    bottom: 88%;
     padding-left: 5rem;
     font-size: 2rem;
     font-weight: 700;
@@ -36,9 +38,10 @@ body {
     align-items: center; 
     text-align: center;
     position: fixed;
-    color: #000000;
-    /* background: #ff7979; */
+    color: #ff7979;
+    background: #555;
     box-shadow: 0 0 5px grey;
+    z-index: 0;
 }
 
 .container {
@@ -48,8 +51,8 @@ body {
     transition: transform .5s linear;
     width: 100%;
     min-height: 100vh;
-    padding: 1rem;
-    z-index: -1;
+    padding-top: 1rem;
+    /* z-index: -1; */
 }
 
 
@@ -89,6 +92,8 @@ body {
     font-size: 1.5em;
     color: #000000;
     margin-left: .7rem;
+    z-index: 10;
+
 }
 
 .circle button:focus {
@@ -167,6 +172,8 @@ nav ul li a:hover {
 .content {
     max-width: 62.5rem;
     margin: 4.3rem auto;
+    padding: 1rem;
+    text-align: center;
 }
 
 .content img {
@@ -175,6 +182,7 @@ nav ul li a:hover {
 
 .content h1 {
     margin: 0;
+    text-align: center;
 }
 
 .content small {
@@ -184,6 +192,10 @@ nav ul li a:hover {
 
 .content p {
     line-height: 1.5;
+    text-align: justify;
 }
-
+.content:nth-of-type(even){
+    background-color: #ff7979;
+    color: #ffffff;;
+}
 
