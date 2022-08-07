@@ -1,23 +1,22 @@
-const boxes = document.querySelectorAll('.box');
+const boxes = document.querySelectorAll(".box");
 
+window.addEventListener("scroll", checkBoxes);
 
-window.addEventListener('scroll', checkBoxes);
-
-checkBoxes()
+checkBoxes();
 
 function checkBoxes() {
-    // innerHeight
-    console.log(window.innerHeight / 5 * 4);
+  // innerHeight
+  console.log((window.innerHeight / 5) * 4);
 
-   const triggerBottom = (window.innerHeight / 5 * 4)
+  const triggerBottom = (window.innerHeight / 5) * 4;
 
-   boxes.forEach(box => {
-    const boxTop = box.getBoundingClientRect().top
+  boxes.forEach((box) => {
+    const boxTop = box.getBoundingClientRect().top;
 
     if (boxTop < triggerBottom) {
-        box.classList.add('show')
+      box.classList.add("show");
     } else {
-        box.classList.remove('show')
+      box.classList.remove("show");
     }
-   })
+  });
 }
