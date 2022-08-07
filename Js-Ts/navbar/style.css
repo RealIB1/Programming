@@ -288,8 +288,8 @@ span.bar.small {
 }
 
 .contents:nth-of-type(odd) {
-  /* background-color: #555; */
-  color: #08b1b1;
+  background-color: #555;
+  color: #ffffff;
 }
 
 .flex-content {
