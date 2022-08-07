@@ -243,6 +243,7 @@ span.bar.small {
     padding: 1rem;
     transition:cubic-bezier(1, 0, 0, 1);
     animation: contentAnimate 1s;
+    text-align: justify;
 }
   
   .content img {
@@ -250,7 +251,6 @@ span.bar.small {
     max-height: 100%;
     width: 20rem;
     height: 20rem;
-    margin: 1rem;
   }
 
   .showcase {
