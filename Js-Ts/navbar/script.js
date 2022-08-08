@@ -67,9 +67,9 @@ window.addEventListener(
 );
 
 
+const triggerAnimate = (window.innerHeight / 6) * 8;
 function contentAnimate() {
 
-  const triggerAnimate = (window.innerHeight / 6) * 9;
 
   contents.forEach((content) => {
     const contentAnim = content.getBoundingClientRect().top;
@@ -83,13 +83,13 @@ function contentAnimate() {
 }
 
 function imageAnimate() {
-  const triggerAnimate = (window.innerHeight / 8) * 15;
+  // const triggerAnimate = (window.innerHeight / 8) * 15;
   console.log(triggerAnimate);
 
   imgs.forEach((img) => {
-    const imgsAnim = img.getBoundingClientRect().top;
+    // const imgsAnim = img.getBoundingClientRect().top;
 
-    if (imgsAnim < triggerAnimate) {
+    if (window.innerWidth >= 970) {
         img.classList.add("showcases");
       } else {
         img.classList.remove("showcases");
@@ -98,7 +98,7 @@ function imageAnimate() {
 }
 
 function paragraphAnimate() {
-  const triggerAnimate = window.innerHeight / 4 * 5;
+  // const triggerAnimate = window.innerHeight / 4 * 5;
 
   paragraphs.forEach((paras) => {
     const paraAnim = paras.getBoundingClientRect().top;
@@ -111,7 +111,7 @@ function paragraphAnimate() {
   });
 }
 function headAnimate() {
-  const triggerAnimate = window.innerHeight / 4 * 5;
+  // const triggerAnimate = window.innerHeight / 4 * 5;
 
   heads.forEach((head) => {
     const headAnim = head.getBoundingClientRect().top;
