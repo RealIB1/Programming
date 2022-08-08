@@ -62,13 +62,14 @@ window.addEventListener(
   "scroll",
   contentAnimate,
   imageAnimate,
-  paragraphAnimate
+  paragraphAnimate,
+  headAnimate
 );
 
 
 function contentAnimate() {
 
-  const triggerAnimate = (window.innerHeight / 5) * 4;
+  const triggerAnimate = (window.innerHeight / 4) * 6;
 
   contents.forEach((content) => {
     const contentAnim = content.getBoundingClientRect().top;
@@ -82,7 +83,7 @@ function contentAnimate() {
 }
 
 function imageAnimate() {
-  const triggerAnimate = window.innerHeight / 5 * 4;
+  const triggerAnimate = window.innerHeight / 4 * 5;
   console.log(triggerAnimate);
 
   imgs.forEach((img) => {
@@ -97,7 +98,7 @@ function imageAnimate() {
 }
 
 function paragraphAnimate() {
-  const triggerAnimate = window.innerHeight / 4* 2;
+  const triggerAnimate = window.innerHeight / 4 * 5;
 
   paragraphs.forEach((paras) => {
     const paraAnim = paras.getBoundingClientRect().top;
@@ -106,6 +107,19 @@ function paragraphAnimate() {
         paras.classList.add("paras");
       } else {
         paras.classList.remove("paras");
+      }
+  });
+}
+function headAnimate() {
+  const triggerAnimate = window.innerHeight / 4 * 5;
+
+  heads.forEach((head) => {
+    const headAnim = head.getBoundingClientRect().top;
+
+    if (headAnim >= triggerAnimate) {
+        head.classList.add("heads");
+      } else {
+        head.classList.remove("heads");
       }
   });
 }
