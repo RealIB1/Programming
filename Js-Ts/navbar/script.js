@@ -68,12 +68,12 @@ window.addEventListener(
 
 function contentAnimate() {
 
-  const triggerAnimate = window.innerHeight / 5;
+  const triggerAnimate = (window.innerHeight / 5) * 4;
 
   contents.forEach((content) => {
     const contentAnim = content.getBoundingClientRect().top;
 
-    if (contentAnim >= triggerAnimate) {
+    if (contentAnim < triggerAnimate) {
         content.classList.add("content");
       } else {
         content.classList.remove("content");
@@ -82,13 +82,13 @@ function contentAnimate() {
 }
 
 function imageAnimate() {
-  const triggerAnimate = window.innerHeight / 5;
+  const triggerAnimate = window.innerHeight / 5 * 4;
   console.log(triggerAnimate);
 
   imgs.forEach((img) => {
     const imgsAnim = img.getBoundingClientRect().top;
 
-    if (imgsAnim <= triggerAnimate) {
+    if (imgsAnim < triggerAnimate) {
         img.classList.add("showcases");
       } else {
         img.classList.remove("showcases");
