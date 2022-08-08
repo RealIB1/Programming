@@ -164,8 +164,9 @@ span.bar.small {
 
   .nav-menu {
     position: fixed;
-    left: 100%;
-    top: 4rem;
+    /* left: 100%; */
+     top: -4rem; 
+    width: 100%;
     padding-left: 1rem;
     display: flex;
     flex-direction: column;
@@ -174,16 +175,18 @@ span.bar.small {
     background-color: #08b1b1;
     width: 100%;
     transform: translate3d(1rem, -10rem, 0rem);
-    transition: all .5s ease-out;
+    transition: all 1s ease-out;
     border-bottom: .2rem solid rgba(0, 0, 0, 0.5);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    z-index: 0;
   }
 
   .nav-menu.active {
+    top: 4rem;
     left: 0;
-    transform: translate3d(0, 0, -10rem);
-    transform-origin: top right;
-    transition: all .5s ease-in;
+    transform: translate3d(0, 0, 20rem);
+    transform-origin: top left;
+    transition: all 1s ease-in;
     z-index: 0;
   }
 
