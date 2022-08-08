@@ -68,63 +68,63 @@ window.addEventListener(
 
 
 
-function contentAnimate() {
+// function contentAnimate() {
   
-  const triggerAnimate = (window.innerHeight / 6) * 8;
+//   const triggerAnimate = (window.innerHeight / 6) * 8;
 
-  contents.forEach((content) => {
-    const contentAnim = content.getBoundingClientRect().top;
+//   contents.forEach((content) => {
+//     const contentAnim = content.getBoundingClientRect().top;
 
-    if (contentAnim < triggerAnimate) {
-        content.classList.add("content");
-      } else {
-        content.classList.remove("content");
-      }
-  });
-}
+//     if (contentAnim < triggerAnimate) {
+//         content.classList.add("content");
+//       } else {
+//         content.classList.remove("content");
+//       }
+//   });
+// }
 
-function imageAnimate() {
+// function imageAnimate() {
 
-  const triggerAnimate = (window.innerHeight / 5) * 4 ;
-  // console.log(triggerAnimate);
+//   const triggerAnimate = (window.innerHeight / 5) * 4 ;
+//   // console.log(triggerAnimate);
 
-  imgs.forEach((img) => {
-    const imgsAnim = img.getBoundingClientRect().top;
+//   imgs.forEach((img) => {
+//     const imgsAnim = img.getBoundingClientRect().top;
 
-    if (imgsAnim < triggerAnimate) {
-        img.classList.add("showcases");
-      } else {
-        img.classList.remove("showcases");
-      }
-  });
-}
+//     if (imgsAnim < triggerAnimate) {
+//         img.classList.add("showcases");
+//       } else {
+//         img.classList.remove("showcases");
+//       }
+//   });
+// }
 
 
 
-function paragraphAnimate() {
-  
-  const triggerAnimate = window.innerHeight / 4 * 5;
+// function paragraphAnimate() {
 
-  paragraphs.forEach((paras) => {
-    const paraAnim = paras.getBoundingClientRect().top;
+//   const triggerAnimate = window.innerHeight / 4 * 5;
 
-    if (paraAnim >= triggerAnimate) {
-        paras.classList.add("paras");
-      } else {
-        paras.classList.remove("paras");
-      }
-  });
-}
-function headAnimate() {
-  const triggerAnimate = window.innerHeight / 4 * 5;
+//   paragraphs.forEach((paras) => {
+//     const paraAnim = paras.getBoundingClientRect().top;
 
-  heads.forEach((head) => {
-    const headAnim = head.getBoundingClientRect().top;
+//     if (paraAnim >= triggerAnimate) {
+//         paras.classList.add("paras");
+//       } else {
+//         paras.classList.remove("paras");
+//       }
+//   });
+// }
+// function headAnimate() {
+//   const triggerAnimate = window.innerHeight / 4 * 5;
 
-    if (headAnim >= triggerAnimate) {
-        head.classList.add("heads");
-      } else {
-        head.classList.remove("heads");
-      }
-  });
-}
+//   heads.forEach((head) => {
+//     const headAnim = head.getBoundingClientRect().top;
+
+//     if (headAnim >= triggerAnimate) {
+//         head.classList.add("heads");
+//       } else {
+//         head.classList.remove("heads");
+//       }
+//   });
+// }
