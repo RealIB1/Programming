@@ -1,9 +1,8 @@
 const barMenu = document.querySelector(".bars-menu");
 const navMenu = document.querySelector(".nav-menu");
 const navLink = document.querySelectorAll(".nav-link");
-
+const main = document.querySelector(".main");
 const toTop = document.getElementById("back-to-top");
-let topSmooth = document.getElementById("top");
 
 barMenu.addEventListener("click", openNav);
 navLink.forEach((n) => n.addEventListener("click", closeNav));
@@ -13,10 +12,19 @@ function openNav() {
   navMenu.classList.toggle("active");
 }
 
+
 function closeNav() {
   barMenu.classList.remove("active");
   navMenu.classList.remove("active");
 }
+
+window.addEventListener("click", function(e) {
+  if (e.target === main || e.target === toTop) {
+    barMenu.classList.remove("active");
+    navMenu.classList.remove("active");
+  }
+})
+
 
 window.addEventListener("scroll", backTop);
 window.addEventListener("resize", backTop);
@@ -102,7 +110,7 @@ window.addEventListener(
 
 
 // function paragraphAnimate() {
-
+  
 //   const triggerAnimate = window.innerHeight / 4 * 5;
 
 //   paragraphs.forEach((paras) => {

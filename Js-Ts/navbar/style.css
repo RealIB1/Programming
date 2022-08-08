@@ -149,6 +149,7 @@ span.bar {
 
 span.bar.small {
   margin-left: 0.6rem;
+  transition: all 1s ease-in;
 }
 
 @media only screen and (max-width: 768px) {
@@ -316,7 +317,7 @@ span.bar.small {
 }
 
 .contents:nth-child(1) {
-  transition: all .5s ease;
+  transition: all .5s ease-in-out;
   animation: contentAnimate 2s;
 
 }
@@ -325,12 +326,14 @@ span.bar.small {
   0% {
     opacity: 0;
     transform: translateX(-200rem);
+    transition: all .4s ease-in-out;
   }
 
 
   100% {
     opacity: 1;
     transform: translateX(0);
+    transition: all .4s ease-in-out;
   }
 }
 
@@ -338,11 +341,13 @@ span.bar.small {
   0% {
     opacity: 0;
     transform: translateX(200rem);
+    transition: all .4s ease-in-out;
   }
 
   100% {
     opacity: 1;
     transform: translateX(0);
+    transition: all .4s ease-in-out;
   }
 }
 
@@ -350,11 +355,13 @@ span.bar.small {
   0% {
     opacity: 0;
     transform: translateY(-10rem);
+    transition: all .4s ease-in-out;
   }
 
   100% {
     opacity: 1;
     transform: translateY(0);
+    transition: all .4s ease-in-out;
   }
 }
 
@@ -362,11 +369,13 @@ span.bar.small {
   0% {
     opacity: 0;
     transform: translateY(20rem);
+    transition: all .4s ease-in-out;
   }
 
   100% {
     opacity: 1;
     transform: translateY(0);
+    transition: all .4s ease-in-out;
   }
 }
 
@@ -375,12 +384,15 @@ span.bar.small {
   0% {
     opacity: 0;
     transform: translateY(20rem);
+    transition: all .4s ease-in-out;
   }
 
 
   100% {
     opacity: 1;
     transform: translateY(0);
+    transition: all .4s ease-in-out;
+
   }
 }
 
