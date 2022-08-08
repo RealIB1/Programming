@@ -175,7 +175,7 @@ span.bar.small {
     background-color: #08b1b1;
     width: 100%;
     transform: translate3d(1rem, -10rem, 0rem);
-    transition: all 1s ease-out;
+    transition: all .5s ease-out;
     border-bottom: .2rem solid rgba(0, 0, 0, 0.5);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
     z-index: 0;
@@ -186,7 +186,7 @@ span.bar.small {
     left: 0;
     transform: translate3d(0, 0, 20rem);
     transform-origin: top left;
-    transition: all 1s ease-in;
+    transition: all .5s ease-in;
     z-index: 0;
   }
 
