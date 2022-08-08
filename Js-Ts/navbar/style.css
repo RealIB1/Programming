@@ -65,6 +65,7 @@ nav.navbar {
   color: #ffffff;
   padding: 1rem;
   width: 100%;
+  border-bottom: .2rem solid rgba(0, 0, 0, 0.5);
   box-shadow: 1px 1px 0.5rem 0 rgba(0, 0, 0, 0.3);
   z-index: 3;
 }
@@ -173,7 +174,7 @@ span.bar.small {
     background-color: #08b1b1;
     width: 100%;
     transform: translate3d(1rem, -10rem, 0rem);
-    transition: all 1s ease-in-out;
+    transition: all .5s ease-out;
     border-bottom: .2rem solid rgba(0, 0, 0, 0.5);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
   }
@@ -182,7 +183,7 @@ span.bar.small {
     left: 0;
     transform: translate3d(0, 0, -10rem);
     transform-origin: top right;
-    transition: all 1s ease-in;
+    transition: all .5s ease-in;
     z-index: 0;
   }
 
@@ -240,7 +241,7 @@ span.bar.small {
 
 .content {
   /* transform: translate(200%); */
-  transition: transform .4s ease;
+  transition: transform .5s ease;
   animation: contentAnimate 1s;
 }
 
@@ -253,13 +254,13 @@ span.bar.small {
 
 .showcases {
   transition: all 0.5s ease-in-out;
-  animation: imageAnimate 2s;
+  animation: imageAnimate 1.5s;
   scroll-behavior: smooth;
 }
 
 .contents h1.heads {
   transition: all 0.5s ease-in-out;
-  animation: headAnimate 1.5s;
+  animation: headAnimate 1.2s;
 }
 
 .contents h1 {
@@ -277,8 +278,8 @@ span.bar.small {
 }
 
 .paras {
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-  animation: paragraphAnimate 2s;
+  transition: all .5s ease-in-out;
+  animation: paragraphAnimate 1.5s;
 }
 
 .contents:nth-of-type(even) {
@@ -339,12 +340,12 @@ span.bar.small {
 @keyframes headAnimate {
   0% {
     opacity: 0;
-    transform: translateY(-20rem);
+    transform: translateY(-10rem);
   }
 
   50% {
     opacity: 0;
-    transform: translateY(-10rem);
+    transform: translateY(-5rem);
   }
 
   100% {
@@ -356,12 +357,12 @@ span.bar.small {
 @keyframes contentAnimate {
   0% {
     opacity: 0;
-    transform: translateY(-10rem);
+    transform: translateY(200rem);
   }
 
   50% {
     opacity: 0;
-    transform: translateY(-5rem);
+    transform: translateY(100rem);
   }
 
   100% {

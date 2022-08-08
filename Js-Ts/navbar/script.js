@@ -68,7 +68,7 @@ window.addEventListener(
 
 function contentAnimate() {
 
-  const triggerAnimate = window.innerHeight / 5 * 4;
+  const triggerAnimate = window.innerHeight / 5;
 
   contents.forEach((content) => {
     const contentAnim = content.getBoundingClientRect().top;
@@ -82,7 +82,7 @@ function contentAnimate() {
 }
 
 function imageAnimate() {
-  const triggerAnimate = window.innerHeight - 400;
+  const triggerAnimate = window.innerHeight / 5;
   console.log(triggerAnimate);
 
   imgs.forEach((img) => {
@@ -97,7 +97,7 @@ function imageAnimate() {
 }
 
 function paragraphAnimate() {
-  const triggerAnimate = window.innerHeight / 5 * 4;
+  const triggerAnimate = window.innerHeight / 4* 2;
 
   paragraphs.forEach((paras) => {
     const paraAnim = paras.getBoundingClientRect().top;
