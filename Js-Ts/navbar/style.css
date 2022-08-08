@@ -243,6 +243,8 @@ span.bar.small {
 
 .content:nth-of-type(even) {
   /* transform: translate(200%); */
+  top: 0;
+  bottom: 0;
   transition: all .1s ease;
   animation: contentAnimate 1s;
 }
